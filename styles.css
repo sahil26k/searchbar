@@ -1,0 +1,56 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    background-color: #eee;
+    color: #a1a1a1;
+    font-family: sans-serif;
+  }
+  
+  p{
+    color: black;
+    font-size: 1.2rem;
+    text-align: left;
+    margin-left: 15rem;
+  }
+  .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .heading {
+    margin-top: 3rem;
+    margin-bottom: 1.5rem;
+    font-size: 2rem;
+    color: black;
+  }
+  
+  .searchInputWrapper {
+    position: relative;
+  }
+  
+  .searchInput {
+    width: 20rem;
+    height: 2rem;
+    padding: 0 1rem; 
+    border-radius: 2rem;
+    border: none;
+    transition: transform 0.1s ease-in-out;
+    margin-bottom: 3rem;
+  }
+  
+  ::placeholder {
+    color: #a1a1a1;
+  }
+
+  :focus::placeholder {
+    text-indent: -999px
+  }
+  
+
+  
