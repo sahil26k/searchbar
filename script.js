@@ -14,9 +14,18 @@ async function loadList() {
 
 function displayList(list) {
     resultList.innerHTML = '';
-    list.forEach(list => {
+    list.forEach(item => {
         const listItem = document.createElement('li');
-        listItem.textContent = list.title;
+
+        const image = document.createElement('img');
+        image.src = item.thumbnailUrl;
+        image.alt = item.title;
+        listItem.appendChild(image);
+
+        const title = document.createElement('p');
+        title.textContent = item.title;
+        listItem.appendChild(title);
+
         resultList.appendChild(listItem);
     });
 }
